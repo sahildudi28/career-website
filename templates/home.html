@@ -14,22 +14,32 @@
   </style>
 </head>
   <body>
+
+    {%include 'nav.html'%}
+      <img  class="img-fluid mt-2" id="dudi" src="https://career-website.sahildudi.repl.co/static/project2.jpg" >
     <div  class="container">
     <h1 class="text-center">{{my_name}}</h1>
-    <img  class="img-fluid mt-2" id="dudi" src="https://career-website.sahildudi.repl.co/static/project2.jpg" >
-    <h2 class="text-center mt-2">about sahil</h2>
+    
+    <div class="row">
+      <div class="col-md-6">
     <p class="lead mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+<img  src="https://career-website.sahildudi.repl.co/static/p5.jpg" style="height:360px" >
+      </div>
+      </div>
     <h2 class="text-center" >About cricket stat</h2>
      <div>
        {% for i in stat %}
         {% include 'info.html' %}
        {% endfor %}
      </div>
-      <div class="text-center">
-    <button   class="btn btn-primary mt-3">contact us</button>
-        <p><b>copyright sahil dudi</b></p>
+      <div style="text-align:center">
+       <a  href="mailto:sahildudi428@gmail.com" type="button" class="btn btn-primary">contact<a>
+          </div>
       </div>
-      </div>
+      
+    {% include 'footer.html' %}
   </body>
 </html>
   
